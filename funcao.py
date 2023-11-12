@@ -20,7 +20,7 @@ def calculator(num1,num2,operador):
     elif(operador == 4):
         return num1/num2
     else:
-        0               
+        return 0               
 
 ##texto entrada de dados do usuario para o operador
 print("Digite um número válido para as opções :")
