@@ -22,16 +22,16 @@ def calculator(num1,num2,operador):
     else:
         0               
 
-##entrada de dados do usuario para o operador
+##texto entrada de dados do usuario para o operador
 print("Digite o número válido para as opções :")
 
-print("0. Sair")
+
 print("1. Somar")
 print("2. Subtrair")
 print("3. Multiplicação")
 print("4. Divisão ")
 
-#captura de dados do usuario
+#captura de dados do usuário
 
 operador = int(input("Digite aqui:"))
 num1 = int(input("Qual o primeiro número?"))
