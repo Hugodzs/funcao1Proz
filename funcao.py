@@ -11,26 +11,26 @@
 
 #funcões principais
 def soma():
-    num1 = float(input("digite o primeiro numero "))
-    num2 = float(input("digite o segundo numero"))
+    num1 = float(input("digite o primeiro número "))
+    num2 = float(input("digite o segundo número"))
     print("Soma: ",num1+num2)
 
 def subtracao():
-    num1 = float(input("Digite o primeiro numero :"))
-    num2 = float(input("Digite o segundo numero :"))
+    num1 = float(input("Digite o primeiro número :"))
+    num2 = float(input("Digite o segundo número :"))
     print("Subtracao: ",num1-num2)
 
 def multiplicacao():
-    num1 = float(input("Digite o primeiro numero :"))
-    num2 = float(input("Digite o segundo numero :"))
+    num1 = float(input("Digite o primeiro número :"))
+    num2 = float(input("Digite o segundo número :"))
     print("Multiplicacao: ",num1*num2)
 
 def divisao():
-    num1 = float(input("Digite o primeiro numero :"))
-    num2 = float(input("Digite o segundo numero : "))
+    num1 = float(input("Digite o primeiro número :"))
+    num2 = float(input("Digite o segundo número : "))
     print("Divisao: ",num1/num2)
 
-
+##variavel opcao
 opcao=1
 
 #texto de opções para o usuario
