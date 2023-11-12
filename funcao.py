@@ -9,31 +9,20 @@
 #Caso seja inserido um número de operação que não exista, o resultado deverá ser 0.
 
 
-#funcões principais
-def soma():
-    num1 = float(input("digite o primeiro número "))
-    num2 = float(input("digite o segundo número"))
-    print("Soma: ",num1+num2)
+#funcão principal
+def calculator(num1,num2,operador):
+    if(operador == 1):
+        return num1 + num2
+    elif(operador == 2):
+        return num1 - num2 
+    elif(operador ==3):
+        return num1*num2
+    elif(operador == 4):
+        return num1/num2
+    else:
+        0               
 
-def subtracao():
-    num1 = float(input("Digite o primeiro número :"))
-    num2 = float(input("Digite o segundo número :"))
-    print("Subtracao: ",num1-num2)
-
-def multiplicacao():
-    num1 = float(input("Digite o primeiro número :"))
-    num2 = float(input("Digite o segundo número :"))
-    print("Multiplicacao: ",num1*num2)
-
-def divisao():
-    num1 = float(input("Digite o primeiro número :"))
-    num2 = float(input("Digite o segundo número : "))
-    print("Divisao: ",num1/num2)
-
-##variavel opcao
-opcao=1
-
-#texto de opções para o usuario
+##entrada de dados do usuario para o operador
 print("Digite o número válido para as opções :")
 
 print("0. Sair")
@@ -42,18 +31,14 @@ print("2. Subtrair")
 print("3. Multiplicação")
 print("4. Divisão ")
 
-# aqui usei "while" para trocar o valor da variavel "opcao" de acordo com o numero escolhido pelo usuário
-while opcao:
-    opcao = int(input("Opção: "))
-#
-# aqui é onde estou chamando as funçoes principais baseado na escolha do usuário
-    if (opcao==1):
-        soma()
-    elif(opcao == 2):
-        subtracao()    
-    elif (opcao == 3):
-        multiplicacao()
-    elif (opcao == 4):
-        divisao()     
-    else:
-        print("Número invalido")       
+#captura de dados do usuario
+
+operador = int(input("Digite aqui:"))
+num1 = int(input("Qual o primeiro número?"))
+num2= int(input("Qual segundo numero?"))
+
+# resultado parao usuário
+resultado = calculator(num1,num2,operador)
+
+#saida
+input(f"Resultado da sua operação é :{resultado}")
