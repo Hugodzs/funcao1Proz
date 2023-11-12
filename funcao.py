@@ -23,7 +23,7 @@ def calculator(num1,num2,operador):
         0               
 
 ##texto entrada de dados do usuario para o operador
-print("Digite o número válido para as opções :")
+print("Digite um número válido para as opções :")
 
 
 print("1. Somar")
